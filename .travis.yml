@@ -7,7 +7,7 @@ install:
   - pip install pytest-cov
 
 script:
-  - pytest --cov-report=xml --cov=nonparstat tests/
+  - pytest --cov-report=xml --cov=densityestimation tests/
 
 after_success:
   - codecov
