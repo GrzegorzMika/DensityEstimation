@@ -1,4 +1,4 @@
-from gpuoptional import array_module
+from utils.gpuoptional import array_module
 
 
 def boxcar_kernel(x, module=None):
