@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pdoc3 --html --force -o'docs' densityestimation/ utils/
+pdoc3 --html --force -o'docs' densityestimation/
