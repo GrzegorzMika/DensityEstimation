@@ -26,7 +26,7 @@
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">from .utils.gpuoptional import array_module
+<pre><code class="python">from densityestimation.utils.gpuoptional import array_module
 
 
 def boxcar_kernel(x, module=None):
@@ -50,7 +50,15 @@ def tricube_kernel(x, module=None):
 def gaussian_kernel(x, module=None):
     xp = array_module(module)
     x = xp.asarray(x)
-    return xp.exp(-x ** 2 / 2) / (xp.sqrt(2 * xp.pi))</code></pre>
+    return xp.exp(-x ** 2 / 2) / (xp.sqrt(2 * xp.pi))
+
+
+KERNELS = {
+    &#39;boxcar&#39;: boxcar_kernel,
+    &#39;epanechnikov&#39;: epanechnikov_kernel,
+    &#39;tricube&#39;: tricube_kernel,
+    &#39;gaussian&#39;: gaussian_kernel
+}</code></pre>
 </details>
 </section>
 <section>

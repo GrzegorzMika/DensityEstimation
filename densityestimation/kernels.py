@@ -1,4 +1,4 @@
-from .utils.gpuoptional import array_module
+from densityestimation.utils.gpuoptional import array_module
 
 
 def boxcar_kernel(x, module=None):
@@ -23,3 +23,11 @@ def gaussian_kernel(x, module=None):
     xp = array_module(module)
     x = xp.asarray(x)
     return xp.exp(-x ** 2 / 2) / (xp.sqrt(2 * xp.pi))
+
+
+KERNELS = {
+    'boxcar': boxcar_kernel,
+    'epanechnikov': epanechnikov_kernel,
+    'tricube': tricube_kernel,
+    'gaussian': gaussian_kernel
+}
