@@ -1,13 +1,31 @@
 language: python
+
 python:
+  - "3.6"
   - "3.7"
+  - "3.8"
+
+os: linux
+
+dist:
+  - "focal"
+
 install:
   - pip install -r requirements.txt
   - pip install codecov
   - pip install pytest-cov
 
 script:
-  - pytest --cov-report=xml --cov=densityestimation tests/
+  - pytest --cov-report=xml --cov=nonparametricdensity nonparametricdensity/tests/
 
 after_success:
   - codecov
+
+deploy:
+  provider: pypi
+  user: __token__
+  password: $PYPI_TOKEN
+  distributions: "sdist bdist_wheel"
+  skip_existing: true
+  on:
+    branch: master

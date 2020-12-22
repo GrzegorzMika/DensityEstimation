@@ -1,4 +1,4 @@
-from densityestimation.utils.gpuoptional import array_module
+from nonparametricdensity.utils.gpuoptional import array_module
 
 
 def boxcar_kernel(x, module=None):

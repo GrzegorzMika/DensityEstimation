@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 from numpy.testing import assert_allclose
-from densityestimation.kernels import *
+from nonparametricdensity.kernels import *
 
 
 class Kernels(unittest.TestCase):

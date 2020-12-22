@@ -2,8 +2,8 @@ import inspect
 from abc import ABCMeta, abstractmethod
 from collections import defaultdict
 
-from densityestimation.utils.exceptions import NotFittedError
-from densityestimation.utils.gpuoptional import array_module
+from nonparametricdensity.utils.exceptions import NotFittedError
+from nonparametricdensity.utils.gpuoptional import array_module
 
 
 class SklearnMixin:

@@ -1,4 +1,4 @@
-from densityestimation import kernels
+from nonparametricdensity import kernels
 
 
 def validate_kernel(kernel):

@@ -1,6 +1,6 @@
-from densityestimation import kernels
-from densityestimation.base_estimator import BaseEstimator
-from densityestimation.utils.validators import validate_kernel, validate_bandwidth
+from nonparametricdensity import kernels
+from nonparametricdensity.base_estimator import BaseEstimator
+from nonparametricdensity.utils.validators import validate_kernel, validate_bandwidth
 
 
 class KernelDensityEstimator(BaseEstimator):

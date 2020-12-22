@@ -12,12 +12,12 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'DensityEstimation'
+NAME = 'NonParametricDensity'
 DESCRIPTION = 'Python module for nonparametric density estimation with GPU support.'
 URL = 'https://github.com/GrzegorzMika/DensityEstimation/'
 EMAIL = 'g.w.mika@gmail.com'
 AUTHOR = 'Grzegorz Mika'
-REQUIRES_PYTHON = '==3.7.*'
+REQUIRES_PYTHON = '>=3.6'
 VERSION = False
 
 # What packages are required for this module to be executed?
@@ -120,7 +120,9 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
